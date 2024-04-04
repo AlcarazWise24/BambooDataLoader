@@ -1,0 +1,92 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <bean id="upsertPatient" class="com.salesforce.dataloader.process.ProcessRunner" scope="prototype">
+        <description>Process for loading data</description>
+        <property name="name" value="upsertPatient"/>
+        <property name="configOverrideMap">
+            <map>
+                <entry key="sfdc.debugMessages" value="false"/>
+                <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
+                <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
+                <entry key="process.encryptionKeyFile" value=""/>
+                <entry key="sfdc.entity" value="Account"/>
+                <entry key="process.operation" value="upsert"/>
+                <entry key="process.mappingFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Mapping\Patient.sdl"/>
+                <entry key="dataAccess.name" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\Patients.csv"/>
+                <entry key="dataAccess.type" value="csvRead"/>
+                <entry key="sfdc.externalIdField" value="Encounter_Group_NPI__c"/>
+                <entry key="process.outputSuccess" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\success.csv"/>
+                <entry key="process.outputError" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\error.csv"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="upsertEncounterOrg" class="com.salesforce.dataloader.process.ProcessRunner" scope="prototype">
+        <description>Process for loading data</description>
+        <property name="name" value="upsertEncounterOrg"/>
+        <property name="configOverrideMap">
+            <map>
+                <entry key="sfdc.debugMessages" value="false"/>
+                <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
+                <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
+                <entry key="process.encryptionKeyFile" value=""/>
+                <entry key="sfdc.entity" value="Account"/>
+                <entry key="process.operation" value="upsert"/>
+                <entry key="process.mappingFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Mapping\EncounterOrg.sdl"/>
+                <entry key="dataAccess.name" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv"/>
+                <entry key="dataAccess.type" value="csvRead"/>
+                <entry key="sfdc.externalIdField" value="Encounter_Group_NPI__c"/>
+                <entry key="process.outputSuccess" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\success.csv"/>
+                <entry key="process.outputError" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\error.csv"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="upsertProviderContact" class="com.salesforce.dataloader.process.ProcessRunner" scope="prototype">
+        <description>Process for loading data</description>
+        <property name="name" value="upsertProviderContact"/>
+        <property name="configOverrideMap">
+            <map>
+                <entry key="sfdc.debugMessages" value="false"/>
+                <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
+                <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
+                <entry key="process.encryptionKeyFile" value=""/>
+                <entry key="sfdc.entity" value="Contact"/>
+                <entry key="process.operation" value="upsert"/>
+                <entry key="process.mappingFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Mapping\ProviderContact.sdl"/>
+                <entry key="dataAccess.name" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv"/>
+                <entry key="dataAccess.type" value="csvRead"/>
+                <entry key="sfdc.externalIdField" value="Primary_Provider_NPI__c"/>
+                <entry key="process.outputSuccess" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\success.csv"/>
+                <entry key="process.outputError" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\error.csv"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="upsertClinicalEncounter" class="com.salesforce.dataloader.process.ProcessRunner" scope="prototype">
+        <description>Process for loading data</description>
+        <property name="name" value="upsertClinicalEncounter"/>
+        <property name="configOverrideMap">
+            <map>
+                <entry key="sfdc.debugMessages" value="false"/>
+                <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
+                <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
+                <entry key="process.encryptionKeyFile" value=""/>
+                <entry key="sfdc.entity" value="ClinicalEncounter"/>
+                <entry key="process.operation" value="upsert"/>
+                <entry key="process.mappingFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Mapping\ClinicalEncounter.sdl"/>
+                <entry key="dataAccess.name" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv"/>
+                <entry key="dataAccess.type" value="csvRead"/>
+                <entry key="sfdc.externalIdField" value="Encounter_Id__c"/>
+                <entry key="process.outputSuccess" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\success.csv"/>
+                <entry key="process.outputError" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\error.csv"/>
+            </map>
+        </property>
+    </bean>
+</beans>

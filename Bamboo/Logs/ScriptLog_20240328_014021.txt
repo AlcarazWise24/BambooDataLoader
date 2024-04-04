@@ -1,0 +1,189 @@
+Checking for files to update...
+Files found. Executing script...
+Created Success Directory
+Created Error Directory
+Running Upsert Patient
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-03-28 01:40:24,426 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-03-28 01:40:24,426 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertPatient from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:40:24,440 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-03-28 01:40:25,290 INFO  [upsertPatient] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:40:25,290 INFO  [upsertPatient] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:40:25,290 INFO  [upsertPatient] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:40:25,306 INFO  [upsertPatient] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-03-28 01:40:25,306 INFO  [upsertPatient] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-03-28 01:40:25,306 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-03-28 01:40:25,322 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-03-28 01:40:25,322 INFO  [upsertPatient] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-03-28 01:40:25,338 INFO  [upsertPatient] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-03-28 01:40:26,072 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-03-28 01:40:27,354 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-03-28 01:40:34,507 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-03-28 01:40:34,507 INFO  [upsertPatient] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\Patients.csv of type: csvRead
+2024-03-28 01:40:34,507 INFO  [upsertPatient] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-03-28 01:40:34,586 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 20
+2024-03-28 01:40:34,586 INFO  [upsertPatient] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-03-28 01:40:34,604 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 20
+2024-03-28 01:40:34,618 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 20
+2024-03-28 01:40:34,618 INFO  [upsertPatient] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 5 records with 0 successes and 0 errors.
+2024-03-28 01:40:34,618 INFO  [upsertPatient] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-03-28 01:40:34,618 INFO  [upsertPatient] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-03-28 01:40:34,618 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 20
+2024-03-28 01:40:34,632 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field cohort will be ignored since destination column is empty
+2024-03-28 01:40:34,632 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_id will be ignored since destination column is empty
+2024-03-28 01:40:34,632 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_name will be ignored since destination column is empty
+2024-03-28 01:40:34,632 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_state will be ignored since destination column is empty
+2024-03-28 01:40:34,648 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,648 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,648 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,648 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field cohort will be ignored since destination column is empty
+2024-03-28 01:40:34,648 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_id will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_name will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_state will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field cohort will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_id will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_name will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_state will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field cohort will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_id will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_name will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_state will be ignored since destination column is empty
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,664 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field cohort will be ignored since destination column is empty
+2024-03-28 01:40:34,679 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_id will be ignored since destination column is empty
+2024-03-28 01:40:34,679 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field customer_name will be ignored since destination column is empty
+2024-03-28 01:40:34,679 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_state will be ignored since destination column is empty
+2024-03-28 01:40:34,679 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,684 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:34,684 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-03-28 01:40:35,774 INFO  [upsertPatient] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 5 of 5 records in 0 minutes, 1 seconds with 5 successes and 0 errors. 
+Rate: 18,000 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-03-28 01:40:35,774 INFO  [upsertPatient] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 5 successful upserts and 0 errors.
+Running Upsert EncounterOrg
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-03-28 01:40:39,398 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-03-28 01:40:39,398 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertEncounterOrg from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:40:39,398 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-03-28 01:40:40,225 INFO  [upsertEncounterOrg] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:40:40,225 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:40:40,225 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:40:40,241 INFO  [upsertEncounterOrg] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-03-28 01:40:40,241 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-03-28 01:40:40,241 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-03-28 01:40:40,256 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-03-28 01:40:40,256 INFO  [upsertEncounterOrg] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-03-28 01:40:40,272 INFO  [upsertEncounterOrg] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-03-28 01:40:41,003 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-03-28 01:40:42,231 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-03-28 01:40:48,981 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-03-28 01:40:48,981 INFO  [upsertEncounterOrg] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv of type: csvRead
+2024-03-28 01:40:48,981 INFO  [upsertEncounterOrg] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-03-28 01:40:49,058 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 14
+2024-03-28 01:40:49,058 INFO  [upsertEncounterOrg] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-03-28 01:40:49,090 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 14
+2024-03-28 01:40:49,105 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 14
+2024-03-28 01:40:49,105 INFO  [upsertEncounterOrg] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 5 records with 0 successes and 0 errors.
+2024-03-28 01:40:49,105 INFO  [upsertEncounterOrg] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-03-28 01:40:49,105 INFO  [upsertEncounterOrg] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-03-28 01:40:49,105 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 14
+2024-03-28 01:40:49,121 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-03-28 01:40:49,121 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_id will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_id will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_id will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_id will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-03-28 01:40:49,137 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_id will be ignored since destination column is empty
+2024-03-28 01:40:50,168 INFO  [upsertEncounterOrg] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 5 of 5 records in 0 minutes, 1 seconds with 5 successes and 0 errors. 
+Rate: 18,000 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-03-28 01:40:50,168 INFO  [upsertEncounterOrg] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 5 successful upserts and 0 errors.
+Running Upsert ProviderContact
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-03-28 01:40:53,726 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-03-28 01:40:53,726 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertProviderContact from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:40:53,740 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-03-28 01:40:54,606 INFO  [upsertProviderContact] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:40:54,606 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:40:54,606 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:40:54,606 INFO  [upsertProviderContact] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-03-28 01:40:54,606 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-03-28 01:40:54,606 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-03-28 01:40:54,620 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-03-28 01:40:54,620 INFO  [upsertProviderContact] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-03-28 01:40:54,651 INFO  [upsertProviderContact] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-03-28 01:40:55,534 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-03-28 01:40:56,634 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-03-28 01:41:02,274 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-03-28 01:41:02,274 INFO  [upsertProviderContact] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv of type: csvRead
+2024-03-28 01:41:02,283 INFO  [upsertProviderContact] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-03-28 01:41:02,337 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-03-28 01:41:02,353 INFO  [upsertProviderContact] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-03-28 01:41:02,384 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-03-28 01:41:02,384 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-03-28 01:41:02,384 INFO  [upsertProviderContact] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 5 records with 0 successes and 0 errors.
+2024-03-28 01:41:02,384 INFO  [upsertProviderContact] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-03-28 01:41:02,399 INFO  [upsertProviderContact] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-03-28 01:41:02,399 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-03-28 01:41:03,736 INFO  [upsertProviderContact] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 5 of 5 records in 0 minutes, 1 seconds with 5 successes and 0 errors. 
+Rate: 18,000 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-03-28 01:41:03,736 INFO  [upsertProviderContact] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 5 successful upserts and 0 errors.
+Running Upsert Clinical Encounter
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-03-28 01:41:07,265 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-03-28 01:41:07,282 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertClinicalEncounter from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:41:07,282 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-03-28 01:41:08,098 INFO  [upsertClinicalEncounter] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-03-28 01:41:08,098 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:41:08,098 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-03-28 01:41:08,112 INFO  [upsertClinicalEncounter] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-03-28 01:41:08,112 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-03-28 01:41:08,112 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-03-28 01:41:08,129 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-03-28 01:41:08,129 INFO  [upsertClinicalEncounter] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-03-28 01:41:08,159 INFO  [upsertClinicalEncounter] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-03-28 01:41:08,899 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-03-28 01:41:09,586 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-03-28 01:41:17,144 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-03-28 01:41:17,144 INFO  [upsertClinicalEncounter] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv of type: csvRead
+2024-03-28 01:41:17,144 INFO  [upsertClinicalEncounter] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-03-28 01:41:17,210 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 48
+2024-03-28 01:41:17,210 INFO  [upsertClinicalEncounter] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-03-28 01:41:17,237 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 48
+2024-03-28 01:41:17,253 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 48
+2024-03-28 01:41:17,253 INFO  [upsertClinicalEncounter] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 5 records with 0 successes and 0 errors.
+2024-03-28 01:41:17,253 INFO  [upsertClinicalEncounter] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-03-28 01:41:17,253 INFO  [upsertClinicalEncounter] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-03-28 01:41:17,253 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 48
+2024-03-28 01:41:17,269 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr1 will be ignored since destination column is empty
+2024-03-28 01:41:17,269 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-03-28 01:41:17,331 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr1 will be ignored since destination column is empty
+2024-03-28 01:41:17,331 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-03-28 01:41:17,347 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr1 will be ignored since destination column is empty
+2024-03-28 01:41:17,347 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-03-28 01:41:17,347 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr1 will be ignored since destination column is empty
+2024-03-28 01:41:17,347 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-03-28 01:41:17,362 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr1 will be ignored since destination column is empty
+2024-03-28 01:41:17,362 INFO  [upsertClinicalEncounter] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-03-28 01:41:18,055 INFO  [upsertClinicalEncounter] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 5 of 5 records with 5 successes and 0 errors.
+2024-03-28 01:41:18,055 INFO  [upsertClinicalEncounter] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 5 successful upserts and 0 errors.
+All processes completed successfully.
+Moving files to the Updated folder...
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\Patients.csv
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv
+        4 file(s) moved.

@@ -1,0 +1,6 @@
+﻿encounter_group_npi,customer_id,customer_name,cohort,customer_provided_patient_id,pmpi,patient_first_name,patient_middle_initial,patient_last_name,patient_name_suffix,patient_dob,patient_gender,patient_addr_1,patient_addr_2,patient_addr_3,patient_city,patient_state,patient_zip,patient_phone,patient_mobile_phone
+1528272234,2094,Privia Health,Anthem Medicare Advantage,12,1111111116,Tester,,Patient,,2/4/1954,M,51 Bamboo Circle,,,Notreal,GA,31051,(404)111-111,
+1528027240,2094,Privia Health,Anthem Commercial,34,1111111117,Testa,,Thedata,,2/2/1952,M,52 Bamboo Court,,,Nocity,GA,31052,(404)111-112,
+1134133002,2094,Privia Health,Anthem Medicare Advantage,67,1111111118,Testof,,Moredata,,3/3/1953,M,53 Bamboo Street,,,Notaplace,GA,31053,(404)111-113,
+1306823745,2094,Privia Health,Anthem Commercial,23,1111111119,Testing,,Itout,,4/4/1954,M,54 Bamboo Road,,,Notacity,GA,31054,(404)111-114,
+1528027324,2094,Privia Health,Anthem Commercial,65,1111111122,Testis,,Ok,,5/5/1955,M,55 Bamboo Drive,,,Norealplace,GA,31055,(404)111-115,

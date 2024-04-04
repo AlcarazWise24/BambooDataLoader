@@ -1,0 +1,11 @@
+#Mapping values
+#Thu Mar 21 00:45:48 CST 2024
+primary_provider_id=Primary_Provider_Id__c
+primary_provider_first_name=FirstName
+primary_provider_last_name=LastName
+primary_provider_title=Title
+primary_provider_npi=Primary_Provider_NPI__c
+primary_provider_telephone=Phone
+primary_provider_fax=Fax
+primary_provider_email=Email
+primary_provider_type=Primary_Provider_Type__c

@@ -1,0 +1,20 @@
+Checking for files to update...
+Files found. Executing script...
+Created Success Directory
+Created Error Directory
+Running Upsert Account
+'process.bat' is not recognized as an internal or external command,
+operable program or batch file.
+An error occurred during "Account". Check DataLoader logs for details.
+Running Upsert Contact
+'process.bat' is not recognized as an internal or external command,
+operable program or batch file.
+An error occurred during "Contact". Check DataLoader logs for details.
+Running Upsert Clinical Encounter
+'process.bat' is not recognized as an internal or external command,
+operable program or batch file.
+An error occurred during "ClinicalEncounter". Check DataLoader logs for details.
+All processes completed successfully.
+Moving files to the Updated folder...
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\SampleData.csv
+        1 file(s) moved.

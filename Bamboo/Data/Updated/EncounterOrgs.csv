@@ -1,0 +1,6 @@
+﻿encounter_group_name,encounter_group_id,encounter_group_npi,encounter_group_type,encounter_group_org_name,encounter_group_org_id,encounter_group_addr1,encounter_group_addr2,encounter_group_city,encounter_group_state,encounter_group_phone,encounter_group_fax,encounter_group_email,encounter_group_time_zone
+Candler Hospital,11111,1528272234,HOS,St. Joseph Candler,2576,5353 Reynolds St.,,Savannah,Georgia,111-111-1111,,,America/New_York
+Piedmont Fayette Hospital,11112,1528027240,HOS,Piedmont Healthcare,1586,1255 Highway 54 West,,Fayetteville,Georgia,111-111-1112,,,America/New_York
+Piedmont Newnan Hospital,11113,1134133002,HOS,Piedmont Healthcare,1586,745 Poplar Road,,Newnan,Georgia,111-111-1113,,,America/New_York
+Emory University Hospital at Wesley Woods,11114,1306823745,HOS,Emory Healthcare,2206,1821 Clifton Rd,,Atlanta,Georgia,111-111-1114,,,America/New_York
+Piedmont Fayette Hospital Encrypt,11115,1528027324,HOS,Piedmont Healthcare,1586,1255 Highway 54 West,,Fayetteville,Georgia,111-111-1115,,,America/New_York

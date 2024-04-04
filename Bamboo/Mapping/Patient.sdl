@@ -1,0 +1,18 @@
+#Mapping values
+#Thu Mar 21 00:45:48 CST 2024
+encounter_group_npi=Encounter_Group_NPI__c
+customer_provided_patient_id=Customer_Provided_Patient_Id__c
+pmpi=PMPI__c
+patient_first_name=FirstName
+patient_middle_initial=MiddleName
+patient_last_name=LastName
+patient_name_suffix=Patient_Name_Suffix__c
+patient_dob=PersonBirthDate
+patient_gender=Patient_Gender__c
+patient_addr_1=BillingStreet
+patient_addr_2=BillingStreet
+patient_addr_3=BillingStreet
+patient_city=BillingCity
+patient_zip=BillingPostalCode
+patient_phone=Phone
+patient_mobile_phone=PersonMobilePhone
