@@ -1,0 +1,257 @@
+Checking for files to update...
+Files found. Executing script...
+Created Success Directory
+Created Error Directory
+Running Upsert Patient
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 20:10:23,626 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 20:10:23,640 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertPatient from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:23,640 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 20:10:24,306 INFO  [upsertPatient] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:24,306 INFO  [upsertPatient] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:24,306 INFO  [upsertPatient] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:24,306 INFO  [upsertPatient] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 20:10:24,315 INFO  [upsertPatient] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 20:10:24,315 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 20:10:24,331 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 20:10:24,331 INFO  [upsertPatient] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 20:10:24,346 INFO  [upsertPatient] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 20:10:25,018 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 20:10:25,474 ERROR [upsertPatient] client.PartnerClient runOperation (PartnerClient.java:379) - Error while calling web service operation: describeSObject, error was: Failed to send request to https://bamboohealth2--wisewolves.sandbox.my.salesforce.com/services/Soap/u/60.0/00DKR0000008mMd
+com.sforce.ws.ConnectionException: Failed to send request to https://bamboohealth2--wisewolves.sandbox.my.salesforce.com/services/Soap/u/60.0/00DKR0000008mMd
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:128) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.soap.partner.PartnerConnection.describeSObject(PartnerConnection.java:1491) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient$11.run(PartnerClient.java:222) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient$11.run(PartnerClient.java:214) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient.runOperation(PartnerClient.java:373) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient.describeSObject(PartnerClient.java:880) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient.setFieldTypes(PartnerClient.java:824) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.setFieldTypes(Controller.java:174) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:160) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+Caused by: java.io.EOFException: input contained no data
+	at com.sforce.ws.parser.MXParser.fillBuf(MXParser.java:2973) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.more(MXParser.java:3014) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.parseProlog(MXParser.java:1422) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.nextImpl(MXParser.java:1408) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.next(MXParser.java:1111) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.nextTag(MXParser.java:1096) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.XmlInputStream.nextTag(XmlInputStream.java:167) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.readSoapEnvelopeStart(SoapConnection.java:272) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:200) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:163) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:108) ~[dataloader-60.0.2.jar:?]
+	... 11 more
+2024-04-08 20:10:25,489 FATAL [main] process.ProcessRunner logErrorAndExitProcess (ProcessRunner.java:253) - Unable to run process
+com.sforce.ws.ConnectionException: Failed to send request to https://bamboohealth2--wisewolves.sandbox.my.salesforce.com/services/Soap/u/60.0/00DKR0000008mMd
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:128) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.soap.partner.PartnerConnection.describeSObject(PartnerConnection.java:1491) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient$11.run(PartnerClient.java:222) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient$11.run(PartnerClient.java:214) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient.runOperation(PartnerClient.java:373) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient.describeSObject(PartnerClient.java:880) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.client.PartnerClient.setFieldTypes(PartnerClient.java:824) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.setFieldTypes(Controller.java:174) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:160) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+Caused by: java.io.EOFException: input contained no data
+	at com.sforce.ws.parser.MXParser.fillBuf(MXParser.java:2973) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.more(MXParser.java:3014) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.parseProlog(MXParser.java:1422) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.nextImpl(MXParser.java:1408) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.next(MXParser.java:1111) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.MXParser.nextTag(MXParser.java:1096) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.parser.XmlInputStream.nextTag(XmlInputStream.java:167) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.readSoapEnvelopeStart(SoapConnection.java:272) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:200) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:163) ~[dataloader-60.0.2.jar:?]
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:108) ~[dataloader-60.0.2.jar:?]
+	... 11 more
+An error occurred during "Patient". Check DataLoader logs for details.
+Running Upsert EncounterOrg
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 20:10:28,362 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 20:10:28,362 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertEncounterOrg from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:28,376 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 20:10:29,182 INFO  [upsertEncounterOrg] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:29,182 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:29,182 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:29,197 INFO  [upsertEncounterOrg] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 20:10:29,197 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 20:10:29,197 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 20:10:29,213 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 20:10:29,213 INFO  [upsertEncounterOrg] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 20:10:29,229 INFO  [upsertEncounterOrg] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 20:10:30,283 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 20:10:31,466 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 20:10:39,508 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 20:10:39,508 INFO  [upsertEncounterOrg] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv of type: csvRead
+2024-04-08 20:10:39,508 INFO  [upsertEncounterOrg] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 20:10:39,508 ERROR [upsertEncounterOrg] csv.CSVFileReader initalizeInput (CSVFileReader.java:291) - File: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv not found.  Open failed.
+java.io.FileNotFoundException: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:265) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.open(CSVFileReader.java:126) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.checkConnection(CSVFileReader.java:115) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.createDao(Controller.java:231) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:240) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+2024-04-08 20:10:39,521 FATAL [upsertEncounterOrg] controller.Controller createDao (Controller.java:233) - Error creating data access object
+com.salesforce.dataloader.exception.DataAccessObjectInitializationException: File: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv not found.  Open failed.
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:292) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.open(CSVFileReader.java:126) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.checkConnection(CSVFileReader.java:115) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.createDao(Controller.java:231) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:240) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+Caused by: java.io.FileNotFoundException: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:265) ~[dataloader-60.0.2.jar:?]
+	... 8 more
+2024-04-08 20:10:39,521 FATAL [main] process.ProcessRunner logErrorAndExitProcess (ProcessRunner.java:253) - Unable to run process
+com.salesforce.dataloader.exception.MappingInitializationException: Error creating data access object
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:242) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+An error occurred during "EncounterOrg". Check DataLoader logs for details.
+Running Upsert ProviderContact
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 20:10:42,326 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 20:10:42,326 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertProviderContact from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:42,326 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 20:10:43,419 INFO  [upsertProviderContact] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:43,419 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:43,419 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:43,427 INFO  [upsertProviderContact] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 20:10:43,427 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 20:10:43,427 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 20:10:43,443 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 20:10:43,443 INFO  [upsertProviderContact] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 20:10:43,458 INFO  [upsertProviderContact] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 20:10:44,149 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 20:10:45,168 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 20:10:51,725 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 20:10:51,725 INFO  [upsertProviderContact] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv of type: csvRead
+2024-04-08 20:10:51,725 INFO  [upsertProviderContact] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 20:10:51,725 ERROR [upsertProviderContact] csv.CSVFileReader initalizeInput (CSVFileReader.java:291) - File: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv not found.  Open failed.
+java.io.FileNotFoundException: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:265) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.open(CSVFileReader.java:126) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.checkConnection(CSVFileReader.java:115) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.createDao(Controller.java:231) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:240) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+2024-04-08 20:10:51,739 FATAL [upsertProviderContact] controller.Controller createDao (Controller.java:233) - Error creating data access object
+com.salesforce.dataloader.exception.DataAccessObjectInitializationException: File: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv not found.  Open failed.
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:292) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.open(CSVFileReader.java:126) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.checkConnection(CSVFileReader.java:115) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.createDao(Controller.java:231) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:240) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+Caused by: java.io.FileNotFoundException: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:265) ~[dataloader-60.0.2.jar:?]
+	... 8 more
+2024-04-08 20:10:51,739 FATAL [main] process.ProcessRunner logErrorAndExitProcess (ProcessRunner.java:253) - Unable to run process
+com.salesforce.dataloader.exception.MappingInitializationException: Error creating data access object
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:242) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+An error occurred during "ProviderContact". Check DataLoader logs for details.
+Running Upsert Clinical Encounter
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 20:10:54,453 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 20:10:54,453 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertClinicalEncounter from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:54,453 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 20:10:55,127 INFO  [upsertClinicalEncounter] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 20:10:55,127 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:55,127 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 20:10:55,127 INFO  [upsertClinicalEncounter] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 20:10:55,127 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 20:10:55,141 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 20:10:55,141 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 20:10:55,141 INFO  [upsertClinicalEncounter] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 20:10:55,156 INFO  [upsertClinicalEncounter] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 20:10:55,813 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 20:10:56,752 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 20:11:04,829 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 20:11:04,829 INFO  [upsertClinicalEncounter] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv of type: csvRead
+2024-04-08 20:11:04,829 INFO  [upsertClinicalEncounter] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 20:11:04,829 ERROR [upsertClinicalEncounter] csv.CSVFileReader initalizeInput (CSVFileReader.java:291) - File: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv not found.  Open failed.
+java.io.FileNotFoundException: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:265) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.open(CSVFileReader.java:126) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.checkConnection(CSVFileReader.java:115) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.createDao(Controller.java:231) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:240) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+2024-04-08 20:11:04,845 FATAL [upsertClinicalEncounter] controller.Controller createDao (Controller.java:233) - Error creating data access object
+com.salesforce.dataloader.exception.DataAccessObjectInitializationException: File: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv not found.  Open failed.
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:292) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.open(CSVFileReader.java:126) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.checkConnection(CSVFileReader.java:115) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.createDao(Controller.java:231) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:240) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+Caused by: java.io.FileNotFoundException: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at com.salesforce.dataloader.dao.csv.CSVFileReader.initalizeInput(CSVFileReader.java:265) ~[dataloader-60.0.2.jar:?]
+	... 8 more
+2024-04-08 20:11:04,845 FATAL [main] process.ProcessRunner logErrorAndExitProcess (ProcessRunner.java:253) - Unable to run process
+com.salesforce.dataloader.exception.MappingInitializationException: Error creating data access object
+	at com.salesforce.dataloader.controller.Controller.initializeOperation(Controller.java:242) ~[dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.run(ProcessRunner.java:168) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.ProcessRunner.runBatchMode(ProcessRunner.java:270) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.runApp(DataLoaderRunner.java:93) [dataloader-60.0.2.jar:?]
+	at com.salesforce.dataloader.process.DataLoaderRunner.main(DataLoaderRunner.java:72) [dataloader-60.0.2.jar:?]
+An error occurred during "ClinicalEncounter". Check DataLoader logs for details.
+All processes completed successfully.
+Moving files to the Updated folder...
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\Patients.csv
+Access is denied.
+        0 file(s) moved.

@@ -1,0 +1,675 @@
+Checking for files to update...
+Files found. Executing script...
+Created Success Directory
+Created Error Directory
+Running Upsert Patient
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 21:45:46,434 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 21:45:46,434 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertPatient from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:45:46,450 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 21:45:53,857 INFO  [upsertPatient] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:45:53,857 INFO  [upsertPatient] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:45:53,857 INFO  [upsertPatient] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:45:53,873 INFO  [upsertPatient] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 21:45:53,873 INFO  [upsertPatient] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 21:45:53,889 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 21:45:53,904 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 21:45:53,920 INFO  [upsertPatient] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 21:45:53,967 INFO  [upsertPatient] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 21:45:54,833 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 21:45:56,015 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 21:46:04,626 INFO  [upsertPatient] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 21:46:04,637 INFO  [upsertPatient] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\Patients.csv of type: csvRead
+2024-04-08 21:46:04,637 INFO  [upsertPatient] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 21:46:04,731 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 52
+2024-04-08 21:46:04,731 INFO  [upsertPatient] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-04-08 21:46:04,762 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 52
+2024-04-08 21:46:04,777 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 52
+2024-04-08 21:46:04,777 INFO  [upsertPatient] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 21 records with 0 successes and 0 errors.
+2024-04-08 21:46:04,777 INFO  [upsertPatient] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-04-08 21:46:04,777 INFO  [upsertPatient] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-04-08 21:46:04,777 INFO  [upsertPatient] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 52
+2024-04-08 21:46:04,793 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,809 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,824 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,824 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,824 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,840 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,840 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,840 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,855 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,855 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,855 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,855 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,855 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,871 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,871 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,871 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,871 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,871 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,887 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,918 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,934 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,949 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,965 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx10_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx1_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx2_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx3_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx4_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx5_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx6_code_description will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx7_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx8_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_code will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field dx9_is_mh_sud will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_2 will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field patient_addr_3 will be ignored since destination column is empty
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:04,980 INFO  [upsertPatient] util.DateOnlyCalendar setTimeInMillis (DateOnlyCalendar.java:63) - Timezone is Central Standard Time
+2024-04-08 21:46:06,922 INFO  [upsertPatient] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 21 of 21 records in 0 minutes, 2 seconds with 21 successes and 0 errors. 
+Rate: 37,800 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-04-08 21:46:06,922 INFO  [upsertPatient] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 21 successful upserts and 0 errors.
+Running Upsert EncounterOrg
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 21:46:13,197 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 21:46:13,197 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertEncounterOrg from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:46:13,211 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 21:46:15,932 INFO  [upsertEncounterOrg] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:46:15,947 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:46:15,947 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:46:15,947 INFO  [upsertEncounterOrg] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 21:46:15,947 INFO  [upsertEncounterOrg] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 21:46:15,947 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 21:46:15,963 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 21:46:15,979 INFO  [upsertEncounterOrg] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 21:46:15,994 INFO  [upsertEncounterOrg] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 21:46:17,068 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 21:46:18,452 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 21:46:26,755 INFO  [upsertEncounterOrg] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 21:46:26,755 INFO  [upsertEncounterOrg] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv of type: csvRead
+2024-04-08 21:46:26,755 INFO  [upsertEncounterOrg] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 21:46:26,837 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 15
+2024-04-08 21:46:26,837 INFO  [upsertEncounterOrg] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-04-08 21:46:26,880 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 15
+2024-04-08 21:46:26,881 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 15
+2024-04-08 21:46:26,881 INFO  [upsertEncounterOrg] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 5 records with 0 successes and 0 errors.
+2024-04-08 21:46:26,881 INFO  [upsertEncounterOrg] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-04-08 21:46:26,881 INFO  [upsertEncounterOrg] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-04-08 21:46:26,881 INFO  [upsertEncounterOrg] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 15
+2024-04-08 21:46:26,896 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-04-08 21:46:26,896 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-04-08 21:46:26,912 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-04-08 21:46:26,912 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-04-08 21:46:26,928 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-04-08 21:46:26,928 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-04-08 21:46:26,928 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-04-08 21:46:26,928 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-04-08 21:46:26,928 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_addr2 will be ignored since destination column is empty
+2024-04-08 21:46:26,928 INFO  [upsertEncounterOrg] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field encounter_group_fax will be ignored since destination column is empty
+2024-04-08 21:46:28,739 INFO  [upsertEncounterOrg] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 5 of 5 records in 0 minutes, 1 seconds with 5 successes and 0 errors. 
+Rate: 18,000 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-04-08 21:46:28,739 INFO  [upsertEncounterOrg] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 5 successful upserts and 0 errors.
+Running Upsert ProviderContact
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 21:46:37,701 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 21:46:37,701 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertProviderContact from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:46:37,701 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 21:46:42,144 INFO  [upsertProviderContact] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:46:42,144 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:46:42,144 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:46:42,144 INFO  [upsertProviderContact] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 21:46:42,159 INFO  [upsertProviderContact] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 21:46:42,159 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 21:46:42,174 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 21:46:42,174 INFO  [upsertProviderContact] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 21:46:42,206 INFO  [upsertProviderContact] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 21:46:42,931 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 21:46:44,139 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 21:46:51,161 INFO  [upsertProviderContact] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 21:46:51,161 INFO  [upsertProviderContact] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv of type: csvRead
+2024-04-08 21:46:51,161 INFO  [upsertProviderContact] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 21:46:51,223 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-04-08 21:46:51,223 INFO  [upsertProviderContact] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-04-08 21:46:51,301 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-04-08 21:46:51,301 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-04-08 21:46:51,301 INFO  [upsertProviderContact] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 5 records with 0 successes and 0 errors.
+2024-04-08 21:46:51,301 INFO  [upsertProviderContact] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-04-08 21:46:51,317 INFO  [upsertProviderContact] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-04-08 21:46:51,317 INFO  [upsertProviderContact] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 9
+2024-04-08 21:46:51,333 INFO  [upsertProviderContact] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field primary_provider_fax will be ignored since destination column is empty
+2024-04-08 21:46:51,348 INFO  [upsertProviderContact] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field primary_provider_fax will be ignored since destination column is empty
+2024-04-08 21:46:51,348 INFO  [upsertProviderContact] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field primary_provider_fax will be ignored since destination column is empty
+2024-04-08 21:46:51,348 INFO  [upsertProviderContact] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field primary_provider_fax will be ignored since destination column is empty
+2024-04-08 21:46:51,348 INFO  [upsertProviderContact] mapping.LoadMapper mapData (LoadMapper.java:100) - Mapping for field primary_provider_fax will be ignored since destination column is empty
+2024-04-08 21:46:53,382 INFO  [upsertProviderContact] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 5 of 5 records in 0 minutes, 2 seconds with 5 successes and 0 errors. 
+Rate: 9,000 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-04-08 21:46:53,382 INFO  [upsertProviderContact] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 5 successful upserts and 0 errors.
+Running Upsert Clinical Encounter
+Data Loader requires Java JRE 17 or later. Checking if it is installed...
+2024-04-08 21:47:03,045 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:310) - Initializing process engine
+2024-04-08 21:47:03,045 INFO  [main] process.ProcessRunner getInstance (ProcessRunner.java:325) - process.nameis specified in the command line. Loading DynaBean with id upsertClinicalEncounter from process-conf.xml located in folder C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:47:03,061 INFO  [main] process.ProcessConfig getBeanFactory (ProcessConfig.java:106) - Loading process configuration from config file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\process-conf.xml
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2024-04-08 21:47:09,473 INFO  [upsertClinicalEncounter] config.Config createDir (Config.java:1496) - Config folder already exists: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf
+2024-04-08 21:47:09,473 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1529) - Looking for file in config path: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:47:09,473 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1560) - User config is found in C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\config.properties
+2024-04-08 21:47:09,473 INFO  [upsertClinicalEncounter] config.LastRun load (LastRun.java:87) - Last run info will be saved in file: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Conf\upsert_lastRun.properties
+2024-04-08 21:47:09,485 INFO  [upsertClinicalEncounter] config.Config getInstance (Config.java:1567) - The controller config has been initialized
+2024-04-08 21:47:09,485 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:136) - Initializing process engine
+2024-04-08 21:47:09,501 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:156) - Logging in to: https://test.salesforce.com
+2024-04-08 21:47:09,501 INFO  [upsertClinicalEncounter] client.PartnerClient dologin (PartnerClient.java:626) - Beginning Partner Salesforce login ....
+2024-04-08 21:47:09,532 INFO  [upsertClinicalEncounter] client.PartnerClient loginInternal (PartnerClient.java:677) - Salesforce login to https://test.salesforce.com/services/Soap/u/60.0/ as user supersaml@wisewolves.com.wisewolves
+2024-04-08 21:47:10,409 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:159) - Setting field types
+2024-04-08 21:47:12,343 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:163) - Setting object reference types
+2024-04-08 21:47:21,460 INFO  [upsertClinicalEncounter] process.ProcessRunner run (ProcessRunner.java:167) - Creating Map
+2024-04-08 21:47:21,460 INFO  [upsertClinicalEncounter] dao.DataAccessObjectFactory getDaoInstance (DataAccessObjectFactory.java:55) - Instantiating data access object: C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv of type: csvRead
+2024-04-08 21:47:21,460 INFO  [upsertClinicalEncounter] controller.Controller createDao (Controller.java:230) - Checking the data access object connection
+2024-04-08 21:47:21,536 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 45
+2024-04-08 21:47:21,536 INFO  [upsertClinicalEncounter] action.OperationInfo instantiateAction (OperationInfo.java:88) - Instantiating action for operation: upsert
+2024-04-08 21:47:21,583 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 45
+2024-04-08 21:47:21,583 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 45
+2024-04-08 21:47:21,583 INFO  [upsertClinicalEncounter] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 0 of 21 records with 0 successes and 0 errors.
+2024-04-08 21:47:21,583 INFO  [upsertClinicalEncounter] controller.Controller executeAction (Controller.java:141) - executing operation: upsert
+2024-04-08 21:47:21,599 INFO  [upsertClinicalEncounter] action.AbstractAction execute (AbstractAction.java:124) - Loading: upsert
+2024-04-08 21:47:21,599 INFO  [upsertClinicalEncounter] csv.CSVFileReader readHeaderRow (CSVFileReader.java:249) - Columns in CSV header = 45
+2024-04-08 21:47:23,439 INFO  [upsertClinicalEncounter] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:83) - Processed 21 of 21 records in 0 minutes, 1 seconds with 21 successes and 0 errors. 
+Rate: 75,600 records per hour. Estimated remaining time to complete: 0 minutes and 0 seconds. 
+2024-04-08 21:47:23,439 INFO  [upsertClinicalEncounter] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:74) - The operation has fully completed.  There were 21 successful upserts and 0 errors.
+All processes completed successfully.
+Moving files to the Updated folder...
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ClinicalEncounters.csv
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\EncounterOrgs.csv
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\Patients.csv
+C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Data\ToUpdate\ProviderContacts.csv
+        4 file(s) moved.

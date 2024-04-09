@@ -1,0 +1,6 @@
+encounter_group_id,encounter_group_name,encounter_group_npi,encounter_group_type,encounter_group_org_name,encounter_group_org_id,encounter_group_addr1,encounter_group_addr2,encounter_group_city,encounter_group_state,encounter_group_phone,encounter_group_fax,encounter_group_email,encounter_group_time_zone,Encounter Group Record Type
+11116,Exmaple Hospital One,1275527895,HOS,St. Joseph Candler,2576,5353 Reynolds St.,,Savannah,Georgia,111-111-1111,,,America/New_York,012Kb000000oRPeIAM
+11117,Example Hospital Two,1275527896,HOS,Piedmont Healthcare,1586,1255 Highway 54 West,,Fayetteville,Georgia,111-111-1112,,,America/New_York,012Kb000000oRPeIAM
+11118,Example Hosital Three,1275527897,HOS,Piedmont Healthcare,1586,745 Poplar Road,,Newnan,Georgia,111-111-1113,,,America/New_York,012Kb000000oRPeIAM
+11119,Example Hospital Four,1275527898,HOS,Emory Healthcare,2206,1821 Clifton Rd,,Atlanta,Georgia,111-111-1114,,,America/New_York,012Kb000000oRPeIAM
+11120,Example Hospital 5,1275527899,HOS,Piedmont Healthcare,1586,1255 Highway 54 West,,Fayetteville,Georgia,111-111-1115,,,America/New_York,012Kb000000oRPeIAM

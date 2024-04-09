@@ -1,0 +1,11 @@
+#Mapping values
+#Sun Apr 07 18:02:28 EDT 2024
+Provider\ Contact\ Record\ Type=RecordTypeId
+primary_provider_email=Email
+primary_provider_first_name=FirstName
+primary_provider_id=Primary_Provider_Id__c
+primary_provider_last_name=LastName
+primary_provider_npi=Primary_Provider_NPI__c
+primary_provider_telephone=Phone
+primary_provider_title=Title
+primary_provider_type=Primary_Provider_Type__c

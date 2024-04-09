@@ -1,0 +1,15 @@
+#Mapping values
+#Sun Apr 07 17:56:12 EDT 2024
+Encounter\ Group\ Record\ Type=RecordTypeId
+encounter_group_addr1=BillingStreet
+encounter_group_city=BillingCity
+encounter_group_email=Facility_Primary_Email__c
+encounter_group_id=Facility_ID__c
+encounter_group_name=Name
+encounter_group_npi=Encounter_Group_NPI__c
+encounter_group_org_id=Encounter_Group_Org_Id__c
+encounter_group_org_name=Encounter_Group_Org_Name__c
+encounter_group_phone=Phone
+encounter_group_state=BillingState
+encounter_group_time_zone=Encounter_Group_Time_Zone__c
+encounter_group_type=Type
