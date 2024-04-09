@@ -9,8 +9,8 @@
                 <entry key="sfdc.debugMessages" value="false"/>
                 <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
                 <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
-                <entry key="sfdc.username" value="supersaml@wisewolves.com.wisewolves"/>
-                <entry key="sfdc.password" value="3ae5e41e3fb51d6fa79c30f25279dc5635b1b2c49bdbbf40f12b5bc43d6e9fe70d4449df37265fbdf126711fa2b1091abc34eed47d8851e9ba3cee1054c8942a"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
                 <entry key="process.encryptionKeyFile" value="C:\Users\david\.dataloader\dataLoader.key"/>
                 <entry key="sfdc.entity" value="Account"/>
                 <entry key="process.operation" value="upsert"/>
@@ -31,8 +31,8 @@
                 <entry key="sfdc.debugMessages" value="false"/>
                 <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
                 <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
-                <entry key="sfdc.username" value="supersaml@wisewolves.com.wisewolves"/>
-                <entry key="sfdc.password" value="3ae5e41e3fb51d6fa79c30f25279dc5635b1b2c49bdbbf40f12b5bc43d6e9fe70d4449df37265fbdf126711fa2b1091abc34eed47d8851e9ba3cee1054c8942a"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
                 <entry key="process.encryptionKeyFile" value="C:\Users\david\.dataloader\dataLoader.key"/>
                 <entry key="sfdc.entity" value="Account"/>
                 <entry key="process.operation" value="upsert"/>
@@ -53,8 +53,8 @@
                 <entry key="sfdc.debugMessages" value="false"/>
                 <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
                 <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
-                <entry key="sfdc.username" value="supersaml@wisewolves.com.wisewolves"/>
-                <entry key="sfdc.password" value="3ae5e41e3fb51d6fa79c30f25279dc5635b1b2c49bdbbf40f12b5bc43d6e9fe70d4449df37265fbdf126711fa2b1091abc34eed47d8851e9ba3cee1054c8942a"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
                 <entry key="process.encryptionKeyFile" value="C:\Users\david\.dataloader\dataLoader.key"/>
                 <entry key="sfdc.entity" value="Contact"/>
                 <entry key="process.operation" value="upsert"/>
@@ -75,8 +75,8 @@
                 <entry key="sfdc.debugMessages" value="false"/>
                 <entry key="sfdc.debugMessagesFile" value="C:\Users\david\OneDrive\Documentos\WiseWolves\Bamboo\dataloader_v60.0.2\Bamboo\Logs\accountMasterSoapTrace.log"/>
                 <entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
-                <entry key="sfdc.username" value="supersaml@wisewolves.com.wisewolves"/>
-                <entry key="sfdc.password" value="3ae5e41e3fb51d6fa79c30f25279dc5635b1b2c49bdbbf40f12b5bc43d6e9fe70d4449df37265fbdf126711fa2b1091abc34eed47d8851e9ba3cee1054c8942a"/>
+                <entry key="sfdc.username" value=""/>
+                <entry key="sfdc.password" value=""/>
                 <entry key="process.encryptionKeyFile" value="C:\Users\david\.dataloader\dataLoader.key"/>
                 <entry key="sfdc.entity" value="ClinicalEncounter"/>
                 <entry key="process.operation" value="upsert"/>
